@@ -13,6 +13,9 @@ jobs:
       - name: 代码迁出
         uses: actions/checkout@v4
 
+      - name: 设置缓存
+        uses: gradle/actions/setup-gradle@v3
+
       - name: 构建Java环境
         uses: actions/setup-java@v4
         with:
