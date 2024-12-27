@@ -15,8 +15,10 @@
 /.idea/other.xml
 /.idea/git_toolbox_blame.xml
 /.idea/emulatorDisplays.xml
+/.idea/encodings.xml
 .DS_Store
 /build
+/app/build
 /captures
 .externalNativeBuild
 .cxx

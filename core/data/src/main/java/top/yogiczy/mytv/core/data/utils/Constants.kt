@@ -31,7 +31,7 @@ object Constants {
         listOf(
             IptvSource(
                 name = "默认直播源 fanmingming（IPV6）",
-                url = "https://live.fanmingming.com/tv/m3u/ipv6.m3u",
+                url = "https://live.fanmingming.cn/tv/m3u/ipv6.m3u",
             ),
             IptvSource(
                 name = "默认直播源 YanG-1989（电视）",
@@ -52,7 +52,7 @@ object Constants {
         listOf(
             EpgSource(
                 name = "默认节目单 fanmingming",
-                url = "https://live.fanmingming.com/e.xml",
+                url = "https://live.fanmingming.cn/e.xml",
             ),
             EpgSource(
                 name = "默认节目单 老张的EPG",

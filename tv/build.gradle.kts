@@ -115,11 +115,11 @@ dependencies {
     // 播放器
     val mediaSettingsFile = file("../../media/core_settings.gradle")
     if (mediaSettingsFile.exists()) {
-        implementation(project(":media3:lib-exoplayer"))
-        implementation(project(":media3:lib-exoplayer-hls"))
-        implementation(project(":media3:lib-exoplayer-rtsp"))
-        implementation(project(":media3:lib-exoplayer-dash"))
-        implementation(project(":media3:lib-ui"))
+        implementation(project(":media3-lib-exoplayer"))
+        implementation(project(":media3-lib-exoplayer-hls"))
+        implementation(project(":media3-lib-exoplayer-rtsp"))
+        implementation(project(":media3-lib-exoplayer-dash"))
+        implementation(project(":media3-lib-ui"))
     } else {
         implementation(libs.androidx.media3.exoplayer)
         implementation(libs.androidx.media3.exoplayer.hls)

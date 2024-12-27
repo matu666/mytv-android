@@ -92,8 +92,6 @@ class Media3VideoPlayer(
                 .build()
         }
 
-        MediaCodecVideoRenderer.skipMultipleFramesOnSameVsync =
-            Configs.videoPlayerSkipMultipleFramesOnSameVSync
         return ExoPlayer.Builder(context)
             .setRenderersFactory(renderersFactory)
             .setTrackSelector(trackSelector)
@@ -409,7 +407,7 @@ class Media3VideoPlayer(
     private fun Format.toAudioMetadata(audio: Metadata.Audio? = null): Metadata.Audio {
         return (audio ?: Metadata.Audio()).copy(
             channels = channelCount,
-            channelsLabel = if (sampleMimeType == MimeTypes.AUDIO_AV3A) "菁彩声" else null,
+            channelsLabel = if (sampleMimeType == MimeTypes.AUDIO_AC3) "菁彩声" else null,
             sampleRate = sampleRate,
             bitrate = bitrate,
             mimeType = sampleMimeType,
